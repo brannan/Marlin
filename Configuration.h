@@ -80,7 +80,7 @@
 // Make delta curves from many straight lines (linear interpolation).
 // This is a trade-off between visible corners (not enough segments)
 // and processor overload (too many expensive sqrt calls).
-#define DELTA_SEGMENTS_PER_SECOND 200
+#define DELTA_SEGMENTS_PER_SECOND 100
 
 // Center-to-center distance of the holes in the diagonal push rods.
 #define DEFAULT_DELTA_DIAGONAL_ROD 215.58 // mm
@@ -108,7 +108,7 @@
 
 // Z-Probe variables
 // Start and end location values are used to deploy/retract the probe (will move from start to end and back again) 
-#define Z_PROBE_OFFSET {0, 14, -6.7, 0}  // X, Y, Z, E distance between hotend nozzle and deployed bed leveling probe.
+#define Z_PROBE_OFFSET {0, 14, -6.75, 0}  // X, Y, Z, E distance between hotend nozzle and deployed bed leveling probe.
 #define Z_PROBE_DEPLOY_START_LOCATION {20, 93, 30, 0}   // X, Y, Z, E start location for z-probe deployment sequence
 #define Z_PROBE_DEPLOY_END_LOCATION {0, 93, 30, 0} 	  // X, Y, Z, E end location for z-probe deployment sequence
 #define Z_PROBE_RETRACT_START_LOCATION {-58, 69, 24, 0}  // X, Y, Z, E start location for z-probe retract sequence
